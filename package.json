@@ -1,0 +1,50 @@
+{
+  "author": "Dan Bright, productions@aninstance.com",
+  "license": "GPLv3",
+  "name": "simple-stock-management-frontend",
+  "version": "4.1.3",
+  "private": true,
+  "description": "React frontend for Simple Stock Management application",
+  "main": "index.js",
+  "dependencies": {
+    "@csstools/normalize.css": "*",
+    "@fortawesome/fontawesome-svg-core": "*",
+    "@fortawesome/free-brands-svg-icons": "*",
+    "@fortawesome/free-regular-svg-icons": "*",
+    "@fortawesome/free-solid-svg-icons": "*",
+    "@fortawesome/react-fontawesome": "*",
+    "acorn": "*",
+    "axios": "*",
+    "bootstrap": "*",
+    "env-cmd": "*",
+    "jquery": "*",
+    "js-cookie": "*",
+    "lodash.clonedeep": "*",
+    "moment": "*",
+    "moment-timezone": "*",
+    "popper.js": "*",
+    "react": "*",
+    "react-app-polyfill": "*",
+    "react-dom": "*",
+    "react-modal": "*",
+    "react-router-dom": "*",
+    "react-scripts": "*"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "start": "HTTPS=false PORT=3001 react-scripts start",
+    "build:production": "env-cmd -f .env.production react-scripts build",
+    "test": "react-scripts test",
+    "test:once": "CI=true react-scripts test",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {},
+  "resolutions": {}
+}

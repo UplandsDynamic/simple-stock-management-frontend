@@ -1,0 +1,12 @@
+div.container {
+    vertical-align:middle!important;
+}
+
+span.appTitle {
+    display: block;
+    transform: rotateX(360deg) scale(1);
+    transition: all 2000ms ease-in-out;
+}
+
+span.appTitle:hover {
+}
