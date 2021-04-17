@@ -1,0 +1,10 @@
+.babelrc
+.gitignore
+build/
+assets/bundles/
+node_modules/
+tests/
+.eslintcache
+*swp
+.package-lock.json
+.env.production
