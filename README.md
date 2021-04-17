@@ -2,15 +2,15 @@
 
 ## About
 
-This a demo/prototype repository for the frontend web client for the Simple Stock Management stock and inventory system. It is built using web technologies, with a client/server architecture. The repository for the server component is at: https://github/com/Aninstance/simple-stock-management
+This a demo/prototype repository for the frontend web client for the Simple Stock Management stock and inventory system. It is built using web technologies, with a client/server architecture. The repository for the server component is at: https://github.com/Aninstance/simple-stock-management
 
 The system allows "stores" to request transfers of stock ("order") from a central stock repository ("warehouse"). Stock is adjusted for the "Warehouse Account" and the "Store Account" as stock transfers are "ordered". Email notifications are sent to the "warehouse" administrator(s) and the ordering "store manager".
 
 This project - available to subscribers and clients as a regularly maintained application-as-a-service - offers a web frontend that connects to a RESTful API backend. Data is stored in either a SQLite, mySQL or PostgreSQL (recommended) database.
 
-## Key technologies
+## Key Technologies for Client Component
 
-Key technologies include: Python 3.7; Django; Django-rest-framework; Django_q (for asynchronous processes); Javascript (ReactJS); HTML5; CSS3; BootStrap 4.
+Key technologies include: Javascript (ReactJS); HTML5; CSS3; BootStrap 4.
 
 ## Live Demo
 
@@ -107,12 +107,12 @@ __Below are basic steps to install and run a demonstration of the app on an Linu
 
 ### Brief Installation Instructions
 
-- clone repository to a build directory of your choice, e.g. `git clone https://github.com/Aninstance/simple-stock-management-frontend.git`
-- make web root directory, e.g. `mkdir -p /var/www/html/ssm-frontend`
+- Clone repository to a build directory of your choice, e.g. `git clone https://github.com/Aninstance/simple-stock-management-frontend.git`
+- Make web root directory, e.g. `mkdir -p /var/www/html/ssm-frontend`
 - Move into the cloned directory and install the required node packages. Ensure a current version of NPM is installed and active on your system - it's recommended to install NVM (Node Version Manager) - which allows multiple node versions to be installed - to avoid changing a pre-installed version that may be required by other software or packages on your system. Install the packages by running `npm install`
-- configure the app environment by editing the `.env.production` file according to your requirements
-- build the app, e.g. `cd simple-stock-management-frontend;` `npm run build:docker`
-- copy the built app into its web directory, e.g. `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static. /var/www/html/ssm-frontend/;`
+- Configure the app environment by editing the `.env.production` file according to your requirements.
+- Build the app, e.g. `cd simple-stock-management-frontend;` `npm run build:docker`
+- Copy the built app into its web directory, e.g. `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static. /var/www/html/ssm-frontend/;`
 - Configure your web server to serve the app from your web directory (this is straight forward, but outwith the scope of this document. If you need further help, please check your web server's documentation).
 
 ### Brief UI instructions
