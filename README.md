@@ -1,4 +1,4 @@
-# Simple Stock Management Frontend
+# Simple Stock Management - Frontend Client Component
 
 ## About
 
@@ -113,7 +113,15 @@ __Below are basic steps to install and run a demonstration of the app on an Linu
 - Configure the app environment by editing the `.env.production` file according to your requirements.
 - Build the app, e.g. `cd simple-stock-management-frontend;` `npm run build:docker`
 - Copy the built app into its web directory, e.g. `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static. /var/www/html/ssm-frontend/;`
+- Recursively change ownership of the `ssm-frontend` directory to your web server user.
 - Configure your web server to serve the app from your web directory (this is straight forward, but outwith the scope of this document. If you need further help, please check your web server's documentation).
+
+### Update Instructions
+
+- From the build directory, run `git pull`. Then, run the commands `npm install;` and `npm run build:docker`.
+- Once the app has been built, copy to the web directory: `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static. /var/www/html/ssm-frontend/;`
+- Recursively change ownership of the `ssm-frontend` directory to your web server user.
+- Restart your web server.
 
 ### Brief UI instructions
 
