@@ -121,8 +121,10 @@ __Below are basic steps to install and run a demonstration of the app on an Linu
 
 ### Update Instructions
 
-- *Important* First, add the lines `.env.production` and `.gitignore` to your the `.gitignore` file in your app source directory. To force git to pick up the change, run: `git rm -r --cached . ;` `git add .`. This is to ensure your edited environmental configuration is not overwritten by the default version.
-- From the build directory, run `git pull`. Then, run the commands `npm install;` and `npm run build:docker`.
+- *Important* To ensure you retain your changes to your environment configuration, make a copy of your `.env.production` file *outside* of your cloned directory. Also, ensure that your changes are committed to the git tree, e.g.: `git commit -am "Edit env config"`.
+- From the build directory, run `git pull`.
+- Replace the `.env.production` file with the copy you previously saved outside of the cloned directory, then re-commit the changes, e.g.: `git commit -am "Edit env config".
+- Run the commands `npm install;` and `npm run build:docker`.
 - Once the app has been built, copy to the web directory: `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static. /var/www/html/ssm-frontend/;`
 - Recursively change ownership of the `ssm-frontend` directory to your web server user.
 - Restart your web server.
