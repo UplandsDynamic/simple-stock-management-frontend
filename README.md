@@ -107,17 +107,21 @@ __Below are basic steps to install and run a demonstration of the app on an Linu
 
 ### Brief Installation Instructions
 
-- Clone repository to a build directory of your choice, e.g. `git clone https://github.com/Aninstance/simple-stock-management-frontend.git`
+- Clone repository to an app source directory of your choice, e.g. `git clone https://github.com/Aninstance/simple-stock-management-frontend.git`
 - Make web root directory, e.g. `mkdir -p /var/www/html/ssm-frontend`
-- Move into the cloned directory and install the required node packages. Ensure a current version of NPM is installed and active on your system - it's recommended to install NVM (Node Version Manager) - which allows multiple node versions to be installed - to avoid changing a pre-installed version that may be required by other software or packages on your system. Install the packages by running `npm install`
-- Configure the app environment by editing the `.env.production` file according to your requirements.
-- Build the app, e.g. `cd simple-stock-management-frontend;` `npm run build:docker`
+- Move into the cloned directory and install the required node packages. Ensure a current version of NPM is installed and active on your system - it's recommended to install NVM (Node Version Manager) - which allows multiple node versions to be installed - to avoid changing a pre-installed version that may be required by other software or packages on your system.
+- Install npx on your system if not already installed, e.g.: `npm install -g npx`
+- Change to the cloned app's directory, e.g.: `cd simple-stock-management-frontend;`
+- Install the packages by running `npm install`
+- Configure the app environment by editing the `.env.production` file according to your requirements
+- Build the app, e.g.: `npm run build:production`
 - Copy the built app into its web directory, e.g. `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static. /var/www/html/ssm-frontend/;`
 - Recursively change ownership of the `ssm-frontend` directory to your web server user.
 - Configure your web server to serve the app from your web directory (this is straight forward, but outwith the scope of this document. If you need further help, please check your web server's documentation).
 
 ### Update Instructions
 
+- *Important* First, add the lines `.env.production` and `.gitignore` to your the `.gitignore` file in your app source directory. To force git to pick up the change, run: `git rm -r --cached . ;` `git add .`. This is to ensure your edited environmental configuration is not overwritten by the default version.
 - From the build directory, run `git pull`. Then, run the commands `npm install;` and `npm run build:docker`.
 - Once the app has been built, copy to the web directory: `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static. /var/www/html/ssm-frontend/;`
 - Recursively change ownership of the `ssm-frontend` directory to your web server user.

@@ -1,10 +1,11 @@
 .babelrc
-.gitignore
 build/
 assets/bundles/
 node_modules/
 tests/
 .eslintcache
 *swp
-.package-lock.json
-.env.production
+package-lock.json
+.env.dev
+devel/
+nvm/
