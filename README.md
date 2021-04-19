@@ -113,7 +113,8 @@ __Below are basic steps to install and run a demonstration of the app on an Linu
 - Install npx on your system if not already installed, e.g.: `npm install -g npx`
 - Change to the cloned app's directory, e.g.: `cd simple-stock-management-frontend;`
 - Install the packages by running `npm install`
-- Configure the app environment by editing the `.env.production` file according to your requirements
+- Configure the app environment by editing the `.env.production` file according to your requirements.
+- Commit changes to the git tree, e.g.: `git commit -am "Edit env config"`.
 - Build the app, e.g.: `npm run build:production`
 - Copy the built app into its web directory, e.g. `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static. /var/www/html/ssm-frontend/;`
 - Recursively change ownership of the `ssm-frontend` directory to your web server user.
@@ -121,9 +122,10 @@ __Below are basic steps to install and run a demonstration of the app on an Linu
 
 ### Update Instructions
 
-- *Important* To ensure you retain your changes to your environment configuration, make a copy of your `.env.production` file *outside* of your cloned directory. Also, ensure that your changes are committed to the git tree, e.g.: `git commit -am "Edit env config"`.
-- From the build directory, run `git pull`.
-- Replace the `.env.production` file with the copy you previously saved outside of the cloned directory, then re-commit the changes, e.g.: `git commit -am "Edit env config".
+- Ensure you backup a copy of changes to your environment configuration - make a copy of your `.env.production` file *outside* of your cloned directory.
+- From the build directory, run `git fetch`.
+- Deal with anything that requires a manual resolution (i.e., where files have been modified locally).
+- Run `git merge` to merge the changes.
 - Run the commands `npm install;` and `npm run build:docker`.
 - Once the app has been built, copy to the web directory: `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static. /var/www/html/ssm-frontend/;`
 - Recursively change ownership of the `ssm-frontend` directory to your web server user.
