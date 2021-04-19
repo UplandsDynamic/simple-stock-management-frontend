@@ -6,6 +6,7 @@ tests/
 .eslintcache
 *swp
 package-lock.json
-.env.dev
 devel/
 nvm/
+.env.production
+.env.dev
