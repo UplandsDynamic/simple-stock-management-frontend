@@ -127,7 +127,7 @@ __Below are basic steps to install and run a demonstration of the app on an Linu
 - Deal with anything that requires a manual resolution (i.e., where files have been modified locally).
 - Run `git merge` to merge the changes.
 - Run the commands `rm -rf node_modules` and  `npm install;` and `npm run build:production`
-- Once the app has been built, copy to the web directory: `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static. /var/www/html/ssm-frontend/;`
+- Once the app has been built, copy to the web directory: `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static/. /var/www/html/ssm-frontend/;`
 - Recursively change ownership of the `ssm-frontend` directory to your web server user.
 - Restart your web server.
 
