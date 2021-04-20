@@ -16,7 +16,7 @@ Key technologies include: Javascript (ReactJS); HTML5; CSS3; BootStrap 4.
 
 There is a live demo, available here:
 
-https://staging-ssm.aninstance.com
+https://frontend.ssm.webapps.uplandsdynamic.com
 
 There are two test users - one for the warehouse administrator, the other for a 'store manager'. Credentials are:
 
@@ -99,7 +99,7 @@ A regularly updated, proprietary licensed application-as-a-service version, whic
 
 The GPL licensed version of this project offered here is *not guaranteed to be regularly maintained*. It is made available here for demo/prototype purposes and *SHOULD NOT* be used in production (i.e. a "live" working environment) unless the administrator regularly patches project dependencies with upstream security updates as and when released by vendors.
 
-If you would like to avail of the proprietary subscription to the application-as-a-service, or request other bespoke work on this project, please email to discuss: ssm@aninstance.com.
+If you would like to avail of the proprietary subscription to the application-as-a-service, or request other bespoke work on this project, please email to discuss: ssm@uplandsdynamic.com.
 
 ## Installation & Usage (on Linux systems)
 
@@ -153,8 +153,8 @@ Note: The above guide is not definitive and is intended for users who know their
 
 ## Development Roadmap
 
-- No new features planned at present. To request a change or additional functionality, or to file a bug, please open a github issue and/or contact productions@aninstance.com.
+- No new features planned at present. To request a change or additional functionality, or to file a bug, please open a github issue and/or contact dan@uplandsdynamic.com.
 
 ## Authors
 
-- Dan Bright (Aninstance Technological Consultancy), productions@aninstance.com
+- Dan Bright (Uplands Dynamic), dan@uplandsdynamic.com
