@@ -8,6 +8,17 @@ The system allows "stores" to request transfers of stock ("order") from a centra
 
 This project - available to subscribers and clients as a regularly maintained application-as-a-service - offers a web frontend that connects to a RESTful API backend. Data is stored in either a SQLite, mySQL or PostgreSQL (recommended) database.
 
+## Support & Project Status
+
+A regularly patched, proprietary licensed application-as-a-service version, fully maintained for subscribers and clients, is available upon request (limited availability) and is currently priced at £10.00/month.
+
+A one-off installation service for this GPL open source version is also available.
+
+The GPL licensed version of this project offered here is *not guaranteed* to be regularly maintained. It is made available here for demo/prototype purposes only, and should not be used in production (i.e. a "live" working environment) unless the administrator regularly patches project dependencies (i.e. PYPI & npm packages) with upstream security updates as and when released by vendors.
+
+If you would like to avail of the proprietary subscription to the application-as-a-service, or request other bespoke work on this project, please email to discuss: ssm@uplandsdynamic.com.
+
+
 ## Key Technologies for Client Component
 
 Key technologies include: Javascript (ReactJS); HTML5; CSS3; BootStrap 4.
