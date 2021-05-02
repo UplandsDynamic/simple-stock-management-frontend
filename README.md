@@ -133,7 +133,6 @@ __Below are basic steps to install and run a demonstration of the app on an Linu
 - Make web root directory, e.g. `mkdir -p /var/www/html/ssm-frontend`.
 - Move into the cloned directory and install the required node packages. Ensure a current version of NPM is installed and active on your system - it's recommended to install NVM (Node Version Manager) - which allows multiple node versions to be installed - to avoid changing a pre-installed version that may be required by other software or packages on your system.
 - Install npx on your system if not already installed, e.g.: `npm install -g npx`.
-- Change to the cloned app's directory, e.g.: `cd simple-stock-management-frontend;`.
 - Install the packages by running `npm install`.
 - Configure the app environment by coping the `.env.production_DEFAULT` file to `.env.production` and editing according to your requirements.
 - Build the app, e.g.: `npm run build:production`.

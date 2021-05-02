@@ -2,7 +2,7 @@
   "author": "Dan Bright, dan@uplandsdynamic.com",
   "license": "GPLv3",
   "name": "simple-stock-management-frontend",
-  "version": "4.1.3",
+  "version": "4.1.4",
   "private": true,
   "description": "React frontend for Simple Stock Management application",
   "main": "index.js",
