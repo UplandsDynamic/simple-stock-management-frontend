@@ -104,13 +104,24 @@ Password: jduejHje(89K
 - Automated removal of obsolete stock line records (lines with zero units of held stock) from the Store accounts following a successful stock take process
 - Historical retention of previous stock take data (not currently exposed on the UI)
 
-## Support & Project Status
+## Brief UI instructions
 
-A regularly updated, proprietary licensed application-as-a-service version, which is fully maintained for subscribers and clients, is available upon request (limited availability). A one-off installation service for this GPL open source version is also available.
+Warehouse administrators:
 
-The GPL licensed version of this project offered here is *not guaranteed to be regularly maintained*. It is made available here for demo/prototype purposes and *SHOULD NOT* be used in production (i.e. a "live" working environment) unless the administrator regularly patches project dependencies with upstream security updates as and when released by vendors.
+- Plus sign button allows adding new stock lines
+- Circular arrows button refreshes records from the database
+- Pencil icon button in `Action` column allows editing of stock line
+- Dustbin icon button in `Action` column allows deletion of a stock line
 
-If you would like to avail of the proprietary subscription to the application-as-a-service, or request other bespoke work on this project, please email to discuss: ssm@uplandsdynamic.com.
+Store account managers:
+
+- Head-&-shoulders icon (right of top header bar) switches between `Warehouse` account (from where transfers are requested) and the user's `Store` account
+- Truck icon (right of top header bar) opens the user's "transfer truck"
+- Circular arrows button refreshes records from the database
+- Plus sign button allows manual addition of new lines to the `Store` account
+- Pencil icon button in `Action` column allows editing of stock line data (e.g. change stock level, record a sale or shrinkage, etc)
+- `New shrinkage` & `New recorded sold` update fields are ***disabled** during a stock line edit if the `stock quantity` field is changed. This is to prevent user error by inadvertent duplication of submitted data (i.e. user manually decrementing the `stock quantity` field whilst also recording the same data as `New recorded sold`). Likewise, the `stock quantity` field is disabled if the `New shrinkage` and/or `New recorded sold` fields are edited, for the same reason
+- Eye icon button initiates a stock take
 
 ## Installation & Usage (on Linux systems)
 
@@ -134,29 +145,10 @@ __Below are basic steps to install and run a demonstration of the app on an Linu
 
 - Ensure you backup a copy of changes to your environment configuration - make a copy of your `.env.production` file *outside* of your cloned directory.
 - From the build directory, run `git pull`.
-- Run the commands `rm -rf node_modules` and  `npm install;` and `npm run build:production`.
+- Run the commands `rm -rf node_modules` and  `npm install --legacy-peer-deps` and `npm run build:production`.
 - Once the app has been built, copy to the web directory: `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static/. /var/www/html/ssm-frontend/;`.
 - Recursively change ownership of the `ssm-frontend` directory to your web server user.
 - Restart your web server.
-
-### Brief UI instructions
-
-Warehouse administrators:
-
-- Plus sign button allows adding new stock lines
-- Circular arrows button refreshes records from the database
-- Pencil icon button in `Action` column allows editing of stock line
-- Dustbin icon button in `Action` column allows deletion of a stock line
-
-Store account managers:
-
-- Head-&-shoulders icon (right of top header bar) switches between `Warehouse` account (from where transfers are requested) and the user's `Store` account
-- Truck icon (right of top header bar) opens the user's "transfer truck"
-- Circular arrows button refreshes records from the database
-- Plus sign button allows manual addition of new lines to the `Store` account
-- Pencil icon button in `Action` column allows editing of stock line data (e.g. change stock level, record a sale or shrinkage, etc)
-- `New shrinkage` & `New recorded sold` update fields are ***disabled** during a stock line edit if the `stock quantity` field is changed. This is to prevent user error by inadvertent duplication of submitted data (i.e. user manually decrementing the `stock quantity` field whilst also recording the same data as `New recorded sold`). Likewise, the `stock quantity` field is disabled if the `New shrinkage` and/or `New recorded sold` fields are edited, for the same reason
-- Eye icon button initiates a stock take
 
 Note: The above guide is not definitive and is intended for users who know their way around Ubuntu server and Django.
 
