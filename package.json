@@ -2,7 +2,7 @@
   "author": "Dan Bright, dan@uplandsdynamic.com",
   "license": "GPLv3",
   "name": "simple-stock-management-frontend",
-  "version": "4.1.4",
+  "version": "4.1.5",
   "private": true,
   "description": "React frontend for Simple Stock Management application",
   "main": "index.js",
@@ -38,7 +38,8 @@
     "test": "react-scripts test",
     "test:once": "CI=true react-scripts test",
     "test:debug": "react-scripts --inspect-brk test --runInBand",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "preinstall": "npx npm-force-resolutions"
   },
   "browserslist": [
     ">0.2%",
@@ -46,6 +47,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {},
-  "resolutions": {}
+  "resolutions": {
+    "glob-parent": "*",
+    "browserslist": "*"
+  }
 }

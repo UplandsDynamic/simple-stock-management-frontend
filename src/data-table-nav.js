@@ -37,7 +37,7 @@ const DataTableNav = ({
                         </div>
                     </div>
                     <div className={'d-flex flex-row'}>
-                        <div className={'btn-group'}>
+                        <div className={'btn-group table-control-btns'}>
                             <button onClick={() => {
                                 Object.assign(stockRecord.meta, { page: 1 });
                                 handleGetRecords({ stockRecord })

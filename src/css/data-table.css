@@ -3,6 +3,10 @@ div.data-table {
     font-size: 1.7vm!important;
 }
 
+.table-control-btns .btn {
+    margin-right: 0.1pc;
+}
+
 table {
     background-color: #001e00 !important;
     font-weight: bold;
@@ -18,7 +22,6 @@ thead th {
     padding: 1em !important;
 }
 
-
 td {
     color: yellow !important;
     padding: 0.5em !important;
@@ -27,6 +30,10 @@ td {
 
 td.action-col, th.action-col {
     color: white !important;
+}
+
+tr {
+    border: none;
 }
 
 tr.outOfStock td.unitsTotal {
