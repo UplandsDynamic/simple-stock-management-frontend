@@ -65,7 +65,7 @@ const DataTableData = ({ stockRecord = {}, handleEditRecord, accountMode, accoun
         return stockRecord.data.results.map((item, index) => {
             let { sku, desc, units_total, unit_price, record_updated } = item;
             let rowClasses = [units_total <= 0 ? 'outOfStock' : '', 'd-flex', 'dataTableRows'];
-            let editButtonClasses = [units_total <= 0 && (!userIsAdmin || !storeAccount) ?
+            let editButtonClasses = [units_total <= 0 && (!userIsAdmin && !storeAccount) ?
                 'disabled' : '', 'table-btn', 'btn', 'btn-primary', 'w-100', 'mb-1'];
             return (<tr key={item.id} data-toggle="modal" className={rowClasses.join(' ')}>
                 {/*<th scope="row">{item.id}</th>*/}
