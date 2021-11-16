@@ -49,6 +49,10 @@
   ],
   "resolutions": {
     "glob-parent": "*",
-    "browserslist": "*"
+    "browserslist": "*",
+    "ansi-regex": "*",
+    "immer": "*",
+    "nth-check": "*",
+    "ansi-html": "*"
   }
 }
