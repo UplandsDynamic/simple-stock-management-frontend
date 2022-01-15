@@ -10,3 +10,4 @@ devel/
 nvm/
 .env.production
 .env.dev
+*~

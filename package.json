@@ -2,7 +2,7 @@
   "author": "Dan Bright, dan@uplandsdynamic.com",
   "license": "GPLv3",
   "name": "simple-stock-management-frontend",
-  "version": "4.1.6",
+  "version": "4.1.8",
   "private": true,
   "description": "React frontend for Simple Stock Management application",
   "main": "index.js",
@@ -23,6 +23,7 @@
     "moment": "*",
     "moment-timezone": "*",
     "popper.js": "*",
+    "mini-css-extract-plugin": "2.4.5",
     "react": "*",
     "react-app-polyfill": "*",
     "react-dom": "*",
@@ -50,9 +51,9 @@
   "resolutions": {
     "glob-parent": "*",
     "browserslist": "*",
-    "ansi-regex": "*",
     "immer": "*",
     "nth-check": "*",
-    "ansi-html": "*"
+    "ansi-html": "*",
+    "postcss": "*"
   }
 }
