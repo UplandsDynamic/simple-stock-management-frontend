@@ -2,7 +2,7 @@
 
 ## Security Advisory
 
-Please note, this application has not been audited for security and *probably does* contain vulnerabilities that could expose data contained on the host system to unauthorized manipulation or disclosure. Deploy at your own risk.
+Please note, this application has not been audited for security and *probably does* contain vulnerabilities that could expose data contained on the host system to unauthorized manipulation or disclosure, both during the building process and deployment. Use at your own risk.
 
 ## About
 
